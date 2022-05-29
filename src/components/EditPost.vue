@@ -27,6 +27,7 @@ export default {
     //   // EditPost
     
     // },
+
      props: {
          heandelEditPost: {
             type: Function,
@@ -37,6 +38,7 @@ export default {
             default: () => {},
         },
     },
+
     data() {
         return {
            editName: '',
@@ -46,6 +48,7 @@ export default {
     },
     mounted() {
     },
+
     //  watch: {        
     //     // 1. 
     //     editName: {
@@ -57,14 +60,17 @@ export default {
     //         deep: true,                    
     //     },
     //  },
+
     methods: {
        
     },
  
 }
+
 </script>
 
 <style scoped>
+
 .labelWrap {
     position: fixed;
     width: 800px;
@@ -72,12 +78,14 @@ export default {
     left: 50%;
     transform: translate(-50%, 0);
 }
+
 .labelEdit {
     display: block;
     align-items: center;
     justify-content: center;
     margin: 7px;
 }
+
 .closeBtn {
     position: absolute;
     display: inline-block;
@@ -89,7 +97,10 @@ export default {
     border: 1px solid;
     border-radius: 34%;
 }
+
 .wrapp {
     position: relative;
 }
+
+
 </style>

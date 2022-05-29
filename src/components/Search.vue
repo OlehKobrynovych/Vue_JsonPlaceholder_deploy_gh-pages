@@ -8,24 +8,32 @@
 </template>
 
 <script>
+
+
 export default {
+
   //  components: { EditPost, EditPost1 }
     // components: {       
     //   // EditPost
     
     // },
+
      props: {
         onUserSearch: {
             type: Function
         },
     },
+
     data() {
         return {
-            searchValue: 9,
+            searchValue: 1
+         
+          
         };
     },
     mounted() {
     },
+
     watch: {    
       searchValue: {
           handler(newValue, prevValue) {
@@ -33,12 +41,18 @@ export default {
           },
       },
     },
+
     methods: {
        
     },
  
 }
+
 </script>
 
 <style scoped>
+
+
+
+
 </style>

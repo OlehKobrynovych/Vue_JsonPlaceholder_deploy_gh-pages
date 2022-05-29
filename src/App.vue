@@ -2,6 +2,7 @@
     <div id="app">
         <img src="./assets/logo.png">
         <HelloWorld/>
+
         <Search :onUserSearch="onUserSearch" />
 
         <div class="commentsCartWrap">
@@ -36,7 +37,7 @@ export default {
     props: {
     },
 
-    data() {
+     data() {
         return {
             comments: [],
             edit: false,
@@ -96,9 +97,9 @@ export default {
           this.edit = false;
           this.comments=this.comments.map(el => {
             if (el.id == this.editPostId) {
-                el.name = editName
-                el.body = editBody
-                el.email = editEmail
+              el.name = editName
+              el.body = editBody
+              el.email = editEmail
             }
             return el
           })
@@ -108,15 +109,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
 .commentsCartWrap {
   /* position: relative; */
   display: flex;
